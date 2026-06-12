@@ -1,0 +1,233 @@
+@media (max-width: 1024px) {
+    .hero-grid {
+        gap: 50px;
+    }
+
+    .event-feature .glass-card {
+        grid-template-columns: 1fr;
+        padding: 44px;
+        gap: 28px;
+    }
+
+    .event-feature h3 {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .hero-visual {
+        order: -1;
+        width: min(340px, 88vw);
+        margin: 0 auto;
+    }
+
+    .hero p {
+        margin: 0 auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .stat {
+        min-width: 100px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .container {
+        width: min(100%, 94%);
+    }
+
+    .section-title {
+        margin-bottom: 44px;
+        text-align: center;
+    }
+
+    .section-title h2 {
+        margin-inline: auto;
+    }
+
+    .section-title span {
+        justify-content: center;
+    }
+
+    .section-title span::before {
+        display: none;
+    }
+
+    .nav-links,
+    .nav-cta,
+    .nav-divider {
+        display: none;
+    }
+
+    .mobile-btn {
+        display: block;
+    }
+
+    .cards {
+        gap: 16px;
+    }
+
+    .glass-card {
+        padding: 28px;
+    }
+
+    .event-feature .glass-card {
+        padding: 30px;
+    }
+
+    .stats-grid .glass-card {
+        padding: 32px 24px;
+    }
+
+    .cta-banner {
+        padding: 72px 0;
+    }
+
+    footer {
+        padding: 50px 0 36px;
+    }
+
+    .footer-grid {
+        text-align: center;
+        gap: 28px;
+    }
+
+    .footer-grid a:hover {
+        transform: none;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cursor,
+    .cursor-dot {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 2.7rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .stat {
+        border-left: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        text-align: center;
+    }
+
+    .stat + .stat {
+        border-top: 1px solid rgba(0, 0, 0, 0.07);
+        padding-top: 20px;
+    }
+
+    .orbit-badge {
+        display: none;
+    }
+
+    .section-title h2 {
+        font-size: 1.9rem;
+    }
+
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-inner h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-buttons .btn-primary,
+    .cta-buttons .btn-secondary {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .glass-card {
+        padding: 22px;
+    }
+
+    .event-feature .glass-card {
+        padding: 24px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .marquee-section {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

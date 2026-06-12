@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="The Alliance of Student Programmers — a community of aspiring developers, builders, and future leaders creating meaningful technology together.">
+        <title>Alliance of Student Programmers</title>
+        <link rel="icon" type="image/png" href="components/ASPlogo2.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=
+            JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700;800&display=swap"
+            rel="stylesheet" integrity="sha384-1234567890abcdef" />
+
+        <link rel="stylesheet" href="../Batman/ASP/CSS/animations.css">
+        <link rel="stylesheet" href="../Batman/ASP/CSS/main.css">
+        <link rel="stylesheet" href="../Batman/ASP/CSS/responsive.css">
+        <link rel="stylesheet" href="../Batman/ASP/CSS/variables.css">
+    </head>
+
+    <body>
+
+        <div class="cursor" aria-hidden="true"></div>
+        <div class="cursor-dot" aria-hidden="true"></div>
+
+        <div id="loader" aria-live="polite" aria-label="Loading">
+            <div class="loader-ring"></div>
+            <h2>ASP</h2>
+        </div>
+
+        <canvas id="particle-canvas"></canvas>
+        <div class="grid-overlay" aria-hidden="true"></div>
+        <div class="grain-overlay" aria-hidden="true"></div>
+
+        <header class="header">
+            <nav class="navbar" aria-label="Main navigation">
+
+                <div class="nav-accent"></div>
+
+                <a href="#" class="logo">
+                    <img src="../Batman/ASP/components/ASPlogo2.png" alt="ASP Logo">
+                </a>
+
+                <div class="nav-divider"></div>
+
+                <ul class="nav-links">
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#pillars">Pillars</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#officers">Officers</a></li>
+                    <li><a href="#merch">Merch</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+
+                <div class="nav-divider"></div>
+
+                <div class="nav-cta">
+                    <button class="nav-ghost-btn">Sign In</button>
+                    <button class="join-btn">Join ASP</button>
+                </div>
+
+                <button class="mobile-btn" aria-label="Toggle menu"
+                    aria-expanded="false">
+                    &#9776;
+                </button>
+
+                <nav class="mobile-menu" aria-label="Mobile navigation">
+                    <a href="#about">About</a>
+                    <a href="#pillars">Pillars</a>
+                    <a href="#events">Events</a>
+                    <a href="#officers">Officers</a>
+                    <a href="#merch">Merch</a>
+                    <a href="#faq">FAQ</a>
+                    <div class="mobile-menu-cta">
+                        <button class="nav-ghost-btn">Sign In</button>
+                        <button class="join-btn">Join ASP</button>
+                    </div>
+                </nav>
+
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="hero" aria-label="Hero">
+
+                <div class="hero-glow glow-1" aria-hidden="true"></div>
+                <div class="hero-glow glow-2" aria-hidden="true"></div>
+                <div class="hero-glow glow-3" aria-hidden="true"></div>
+
+                <div class="container hero-grid">
+
+                    <div class="hero-content">
+
+                        <div class="badge" aria-label="Recruitment status">
+                            LEARN <span class="badge-dot"></span> CODE <span
+                                class="badge-dot"></span> LEAD
+                        </div>
+
+                        <h1>Where <span>Code</span><br>Meets Purpose.</h1>
+
+                        <p>The Alliance of Student Programmers is a community of
+                            aspiring developers, builders, and future leaders
+                            creating meaningful technology together.</p>
+
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn-primary">Join The
+                                Alliance</a>
+                            <a href="#about" class="btn-secondary">Learn
+                                More</a>
+                        </div>
+
+                        <div class="hero-stats"
+                            aria-label="Organization statistics">
+                            <div class="stat">
+                                <h2 data-counter="30" data-suffix>0+</h2>
+                                <span>Active Members</span>
+                            </div>
+                            <div class="stat">
+                                <h2 data-counter="1" data-suffix>0+</h2>
+                                <span>Projects Built</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="hero-visual" aria-hidden="true">
+
+                        <div class="orbit orbit-1">
+                            <div class="orbit-node orbit-node-1"></div>
+                            <div class="orbit-node orbit-node-2"></div>
+                            <div class="orbit-node orbit-node-3"></div>
+                        </div>
+                        <div class="orbit orbit-2"></div>
+                        <div class="orbit orbit-3"></div>
+
+                        <div class="orbit-core">ASP</div>
+
+                        <div class="orbit-badge orbit-badge-1">
+                            <span class="dot"></span>React
+                        </div>
+                        <div class="orbit-badge orbit-badge-2">
+                            <span class="dot"></span>Python
+                        </div>
+                        <div class="orbit-badge orbit-badge-3">
+                            <span class="dot"></span>Node.js
+                        </div>
+                        <div class="orbit-badge orbit-badge-4">
+                            <span class="dot"></span>Design
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="marquee-section" aria-hidden="true">
+                <div class="marquee-track">
+
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Workshops</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Hackathons</span>
+                    <span class="marquee-item"><span class="m-dot"></span>Open
+                        Source</span>
+                    <span class="marquee-item"><span class="m-dot"></span>Tech
+                        Talks</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Mentorship</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Networking</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Internships</span>
+                    <span class="marquee-item"><span class="m-dot"></span>Real
+                        Projects</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Community</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Leadership</span>
+
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Workshops</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Hackathons</span>
+                    <span class="marquee-item"><span class="m-dot"></span>Open
+                        Source</span>
+                    <span class="marquee-item"><span class="m-dot"></span>Tech
+                        Talks</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Mentorship</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Networking</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Internships</span>
+                    <span class="marquee-item"><span class="m-dot"></span>Real
+                        Projects</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Community</span>
+                    <span class="marquee-item"><span
+                            class="m-dot"></span>Leadership</span>
+                </div>
+            </div>
+
+            <section id="about" class="section">
+
+                <div class="container">
+
+                    <div class="section-title">
+                        <span>About</span>
+                        <h2>More Than a Student Organization.</h2>
+                    </div>
+
+                    <div class="about-grid">
+
+                        <div class="glass-card stagger-1">
+                            <div class="about-icon">🎯</div>
+                            <h3>Our Mission</h3>
+                            <p>Empower aspiring programmers by providing
+                                opportunities
+                                for collaboration, innovation, and real-world
+                                experience that goes beyond the classroom.</p>
+                        </div>
+
+                        <div class="glass-card stagger-2">
+                            <div class="about-icon">🔭</div>
+                            <h3>Our Vision</h3>
+                            <p>To become the leading campus community that
+                                shapes
+                                the next generation of software engineers and
+                                technology leaders in the region.</p>
+                        </div>
+
+                        <div class="glass-card stagger-3">
+                            <div class="about-icon">📚</div>
+                            <h3>Learn</h3>
+                            <p>Gain practical knowledge through hands-on
+                                workshops,
+                                peer mentorship, and structured technical
+                                sessions
+                                at every skill level.</p>
+                        </div>
+
+                        <div class="glass-card stagger-4">
+                            <div class="about-icon">⚙️</div>
+                            <h3>Build</h3>
+                            <p>Work with teams to create meaningful applications
+                                and real-world projects that ship — not just
+                                sit in a repo.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="pillars" class="section section-alt">
+
+                <div class="container">
+
+                    <div class="section-title">
+                        <span>Pillars</span>
+                        <h2>Four Foundations.</h2>
+                    </div>
+
+                    <div class="pillars-grid">
+
+                        <div class="glass-card pillar-card stagger-1">
+                            <h3>Learn</h3>
+                            <p>Workshops, mentorships, and technical sessions
+                                designed to sharpen your skills at every
+                                level — from beginner to advanced.</p>
+                        </div>
+
+                        <div class="glass-card pillar-card stagger-2">
+                            <h3>Build</h3>
+                            <p>Real-world projects that turn ideas into working
+                                software — shipped, not shelved. Every line
+                                matters.</p>
+                        </div>
+
+                        <div class="glass-card pillar-card stagger-3">
+                            <h3>Lead</h3>
+                            <p>Develop confidence, communication, and leadership
+                                through real teamwork, ownership, and
+                                accountability.</p>
+                        </div>
+
+                        <div class="glass-card pillar-card stagger-4">
+                            <h3>Connect</h3>
+                            <p>Build lasting friendships and professional
+                                networks that extend well beyond university
+                                and into your career.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="events" class="section">
+
+                <div class="container">
+
+                    <div class="section-title">
+                        <span>Events</span>
+                        <h2>Experiences That Build Developers.</h2>
+                    </div>
+
+                    <div class="event-feature">
+                        <div class="glass-card">
+                            <div class="event-feature-content">
+                                <small>Featured Event</small>
+                                <h3>ASP Hackathon 2026</h3>
+                                <p>A 24-hour innovation challenge where teams
+                                    create
+                                    impactful software solutions under real
+                                    constraints.
+                                    Open to all skill levels — from first-timers
+                                    to
+                                    veterans.</p>
+                            </div>
+                            <div class="event-feature-cta">
+                                <a href="#contact" class="btn-primary">Register
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+
+                        <div class="glass-card stagger-1">
+                            <div class="event-badge">Weekly</div>
+                            <h3>Coding Night</h3>
+                            <p>Collaborative programming sessions open to all
+                                skill
+                                levels. Bring a problem, leave with a solution
+                                and new friends.</p>
+                        </div>
+
+                        <div class="glass-card stagger-2">
+                            <div class="event-badge">Monthly</div>
+                            <h3>Tech Talk</h3>
+                            <p>Guest speakers from industry and academia sharing
+                                real-world insights, career paths, and hard
+                                lessons learned.</p>
+                        </div>
+
+                        <div class="glass-card stagger-3">
+                            <div class="event-badge">Quarterly</div>
+                            <h3>Workshop</h3>
+                            <p>Hands-on learning covering modern tools,
+                                frameworks,
+                                and best practices used in the industry
+                                today.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="officers" class="section section-alt">
+
+                <div class="container">
+
+                    <div class="section-title">
+                        <span>Officers</span>
+                        <h2>The People Behind ASP.</h2>
+                    </div>
+
+                    <div class="cards">
+
+                        <div class="glass-card officer-card stagger-1">
+                            <div class="officer-avatar-initials">G</div>
+                            <h3>Gerald Buscayno Tolentino</h3>
+                            <span class="officer-role">Founder</span>
+                            <div class="officer-socials">
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card officer-card stagger-2">
+                            <div class="officer-avatar-initials">B</div>
+                            <h3>Bryce Ivan Angeles Baldwin</h3>
+                            <span class="officer-role">President</span>
+                            <div class="officer-socials">
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card officer-card stagger-3">
+                            <div class="officer-avatar-initials">R</div>
+                            <h3>Reynaldo Gatus Ong</h3>
+                            <span class="officer-role">Vice President</span>
+                            <div class="officer-socials">
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card officer-card stagger-4">
+                            <div class="officer-avatar-initials">E</div>
+                            <h3>Emily Akut</h3>
+                            <span class="officer-role">Secretary</span>
+                            <div class="officer-socials">
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card officer-card stagger-5">
+                            <div class="officer-avatar-initials">L</div>
+                            <h3>Leila Hermano</h3>
+                            <span class="officer-role">Treasurer</span>
+                            <div class="officer-socials">
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card officer-card stagger-6">
+                            <div class="officer-avatar-initials">E</div>
+                            <h3>Ericson C Bermudez</h3>
+                            <span class="officer-role">Auditor</span>
+                            <div class="officer-socials">
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card officer-card stagger-7">
+                            <div class="officer-avatar-initials">K</div>
+                            <h3>Kevin Jade Sese</h3>
+                            <span class="officer-role">Education and Mentorship
+                                Director</span>
+                            <div class="officer-socials">
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card officer-card stagger-8">
+                            <div class="officer-avatar-initials">J</div>
+                            <h3>Joryx Raven Padullo</h3>
+                            <span class="officer-role">Programming
+                                Director</span>
+                            <div class="officer-socials">
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a href="#" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="section stats-section"
+                aria-label="Organization statistics">
+
+                <div class="container">
+
+                    <div class="stats-grid">
+
+                        <div class="glass-card stagger-1">
+                            <div class="stat-icon">👥</div>
+                            <h2 data-counter="30" data-suffix="+">0+</h2>
+                            <p>Active Members</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="merch" class="section section-alt">
+
+                <div class="container">
+
+                    <div class="section-title">
+                        <span>Merch</span>
+                        <h2>Represent The Alliance.</h2>
+                    </div>
+
+                    <div class="cards">
+
+                        <div class="glass-card stagger-1">
+                            <div class="merch-image">Preview</div>
+                            <h3>ASP Hoodie</h3>
+                            <p>Premium embroidered hoodie. Available in black
+                                and grey. Heavyweight fleece for all-day
+                                wear.</p>
+                            <div class="merch-price">
+                                <h4>&#8369;1,200</h4>
+                                <span>LIMITED</span>
+                            </div>
+                            <a href="#contact" class="btn-primary">Order Now</a>
+                        </div>
+
+                        <div class="glass-card stagger-2">
+                            <div class="merch-image">Preview</div>
+                            <h3>ASP Shirt</h3>
+                            <p>Official organization shirt with embroidered
+                                logo.
+                                Comfortable and breathable for everyday
+                                wear.</p>
+                            <div class="merch-price">
+                                <h4>&#8369;500</h4>
+                                <span class="in-stock">IN STOCK</span>
+                            </div>
+                            <a href="#contact" class="btn-primary">Order Now</a>
+                        </div>
+
+                        <div class="glass-card stagger-3">
+                            <div class="merch-image">Preview</div>
+                            <h3>ASP Stickers</h3>
+                            <p>Laptop sticker collection. Weatherproof vinyl,
+                                strong adhesive, long-lasting print.</p>
+                            <div class="merch-price">
+                                <h4>&#8369;100</h4>
+                                <span class="in-stock">IN STOCK</span>
+                            </div>
+                            <a href="#contact" class="btn-primary">Order Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="faq" class="section">
+
+                <div class="container">
+
+                    <div class="section-title">
+                        <span>FAQ</span>
+                        <h2>Frequently Asked Questions.</h2>
+                    </div>
+
+                    <ul class="faq-container">
+
+                        <li class="faq-item">
+                            <button class="faq-question" type="button"
+                                aria-expanded="false">
+                                How do I join ASP?
+                            </button>
+                            <section class="faq-answer">
+                                Join during the official recruitment period and
+                                complete the
+                                registration process. Watch our social media
+                                pages for
+                                announcements and opening dates each semester.
+                            </section>
+                        </li>
+
+                        <li class="faq-item">
+                            <button class="faq-question" type="button"
+                                aria-expanded="false">
+                                Do I need programming experience to join?
+                            </button>
+                            <section class="faq-answer">
+                                No experience required. We welcome complete
+                                beginners — our
+                                workshops are specifically designed to teach you
+                                from the
+                                ground up in a supportive, judgment-free
+                                environment.
+                            </section>
+                        </li>
+
+                        <li class="faq-item">
+                            <button class="faq-question" type="button"
+                                aria-expanded="false">
+                                Are there membership fees?
+                            </button>
+                            <section class="faq-answer">
+                                Fees vary per academic year. Details are
+                                announced during the
+                                official recruitment period. Contact us through
+                                the form below
+                                for the current rate.
+                            </section>
+                        </li>
+
+                        <li class="faq-item">
+                            <button class="faq-question" type="button"
+                                aria-expanded="false">
+                                What courses or year levels can join?
+                            </button>
+                            <section class="faq-answer">
+                                ASP is open to all year levels and all courses.
+                                We believe
+                                great ideas and great developers come from every
+                                corner of
+                                campus.
+                            </section>
+                        </li>
+
+                        <li class="faq-item">
+                            <button class="faq-question" type="button"
+                                aria-expanded="false">
+                                How often do events happen?
+                            </button>
+                            <section class="faq-answer">
+                                We run Coding Nights weekly, Tech Talks monthly,
+                                and larger
+                                events like hackathons and workshops each
+                                semester. There is
+                                always something happening.
+                            </section>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <section class="cta-banner" aria-label="Call to action">
+                <div class="container">
+                    <div class="cta-inner reveal">
+                        <h2>Ready to Build Something Real?</h2>
+                        <p>Join a community of passionate students who are
+                            learning,
+                            building, and growing together. Your next big
+                            project
+                            starts here.</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn-primary">Apply Now</a>
+                            <a href="#events" class="btn-secondary">See
+                                Events</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section section-alt">
+
+                <div class="container">
+
+                    <div class="section-title">
+                        <span>Contact</span>
+                        <h2>Let's Build Together.</h2>
+                    </div>
+
+                    <form class="contact-form" method="post" novalidate>
+
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input
+                                id="contact-name"
+                                type="text"
+                                name="name"
+                                placeholder="e.g. Juan dela Cruz"
+                                required
+                                autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input
+                                id="contact-email"
+                                type="email"
+                                name="email"
+                                placeholder="e.g. juan@email.com"
+                                required
+                                autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                placeholder="Tell us what you'd like to know..."
+                                rows="6"
+                                required></textarea>
+                        </div>
+
+                        <button class="btn-primary" type="submit">Send
+                            Message</button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="container footer-grid">
+
+                <div>
+                    <h3>Alliance of Student Programmers</h3>
+                    <p>Where Code Meets Purpose.<br>
+                        Established 2018 &middot; Still building.</p>
+                </div>
+
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#pillars">Pillars</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#officers">Officers</a></li>
+                        <li><a href="#merch">Merch</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#" target="_blank"
+                                rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="#" target="_blank"
+                                rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="#" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="container footer-bottom">
+                <p>&copy; 2026 Alliance of Student Programmers. All rights
+                    reserved.</p>
+                <span class="footer-mono">batch 2025 &middot; now
+                    recruiting</span>
+            </div>
+
+        </footer>
+
+        <script src="../Batman/ASP/JS/cursor.js" defer></script>
+        <script src="../Batman/ASP/JS/particle.js" defer></script>
+        <script src="../Batman/ASP/JS/main.js" defer></script>
+
+    </body>
+</html>

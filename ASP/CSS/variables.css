@@ -1,0 +1,77 @@
+:root {
+
+    --crimson: #B80F1F;
+    --crimson-dark: #8A0B17;
+    --crimson-light: #D41526;
+    --crimson-soft: #F5C5CA;
+    --crimson-subtle: rgba(184, 15, 31, 0.06);
+    --crimson-glow: rgba(184, 15, 31, 0.18);
+
+    --bg: #F7F7FC;
+    --bg-2: #FFFFFF;
+    --bg-3: #EEEEF6;
+    --surface: #FFFFFF;
+
+    --glass: rgba(255, 255, 255, 0.92);
+    --glass-hover: rgba(255, 255, 255, 1);
+    --glass-border: rgba(0, 0, 0, 0.07);
+
+    --white: #FFFFFF;
+    --text: #0D0D1A;
+    --text-primary: #0D0D1A;
+    --text-secondary: #52527A;
+    --silver: #6A6A8A;
+    --muted: #9898B8;
+
+    --font-display: "Space Grotesk", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    --sp-1: 0.25rem;
+    --sp-2: 0.5rem;
+    --sp-3: 0.75rem;
+    --sp-4: 1rem;
+    --sp-5: 1.25rem;
+    --sp-6: 1.5rem;
+    --sp-8: 2rem;
+    --sp-10: 2.5rem;
+    --sp-12: 3rem;
+    --sp-16: 4rem;
+    --sp-20: 5rem;
+
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+    --radius-xl: 32px;
+    --radius-full: 9999px;
+
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    --shadow-glass:
+        0 2px 16px rgba(0, 0, 0, 0.06),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+
+    --shadow-card:
+        0 1px 4px rgba(0, 0, 0, 0.04),
+        0 4px 24px rgba(0, 0, 0, 0.07);
+
+    --shadow-card-hover:
+        0 12px 40px rgba(0, 0, 0, 0.12),
+        0 2px 8px rgba(0, 0, 0, 0.06),
+        0 0 0 1px rgba(184, 15, 31, 0.08);
+
+    --shadow-red:
+        0 8px 32px rgba(184, 15, 31, 0.22),
+        0 2px 8px rgba(184, 15, 31, 0.10);
+
+    --shadow-red-lg:
+        0 16px 48px rgba(184, 15, 31, 0.28),
+        0 4px 16px rgba(184, 15, 31, 0.12);
+
+    --container: 1240px;
+
+    --fast: 0.2s;
+    --normal: 0.35s;
+    --slow: 0.7s;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
